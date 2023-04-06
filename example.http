@@ -1,0 +1,11 @@
+GET http://localhost:8080/k8
+
+###
+
+POST http://localhost:8080/k8/save HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "John",
+    "age": 20
+}
