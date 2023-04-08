@@ -37,4 +37,12 @@ kubectl exec -it mysql-123 bin/bash
 
 To view the running app on your browser, giving that the app is running on service service-123, run the command:
 
+```shell
 minikube service service-123 --url
+```
+
+To enable the minikube dashboard run:
+
+```shell
+minikube dashboard
+```
