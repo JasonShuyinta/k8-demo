@@ -19,7 +19,7 @@ spec:
             - containerPort: 8080
           env:
             - name: DB_HOST
-              value: mysql
+              value: mysql:3306
             - name: DB_NAME
               value: k8s
             - name: DB_USERNAME

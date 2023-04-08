@@ -71,4 +71,4 @@ spec:
   selector:
     app: mysql
     tier: database
-  clusterIP: None #Using the DN the clusterIp is irrelevant
+  clusterIP: None #Using the DNS the clusterIp is irrelevant
