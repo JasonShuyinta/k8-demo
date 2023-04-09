@@ -70,6 +70,7 @@ This app uses the following technologies:
 - Spring Boot: A Java framework for building web applications.
 - MySQL: A popular open-source relational database.
 - Kubernetes: An open-source container orchestration platform.
+- Docker: An open source platform that enables developers to build, deploy, run, update and manage containers
 
 
 ## Kubernetes useful commands
