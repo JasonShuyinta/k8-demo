@@ -2,11 +2,8 @@ spring:
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://${DB_HOST}/${DB_NAME}?useSSL=false
-        #url: jdbc:mysql://localhost:3306/k8s?useSSL=false
         username: ${DB_USERNAME}
         password: ${DB_PASSWORD}
-        #username: root
-        #password: password
         hikari:
             initialization-fail-timeout: 0
     jpa:

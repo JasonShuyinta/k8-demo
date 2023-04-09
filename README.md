@@ -71,15 +71,8 @@ This app uses the following technologies:
 - MySQL: A popular open-source relational database.
 - Kubernetes: An open-source container orchestration platform.
 
-## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Kubernetes commands
+## Kubernetes useful commands
 (You need Docker Desktop up and running)
 
 To start Kubernetes run this command
@@ -111,6 +104,10 @@ To run a specific pod in your terminal, for example a mysql terminal, get the po
 kubectl exec -it mysql-123 bin/bash
 ```
 
+After you successfull enter into integrated mode in the mysql pod, to access your database run:
+```powershell
+mysql -h <db_host> -u <user> -p <password> 
+```
 
 To view the running app on your browser, giving that the app is running on service service-123, run the command:
 
@@ -123,3 +120,4 @@ To enable the minikube dashboard run:
 ```shell
 minikube dashboard
 ```
+
