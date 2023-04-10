@@ -1,11 +1,28 @@
-GET http://localhost:8080/k8
+#Get all users
+GET http://localhost:8080/users
 
 ###
 
-POST http://localhost:8080/k8/save HTTP/1.1
+#Get a user by ID
+GET http://localhost:8080/users/1
+
+#Create a new user
+POST http://localhost:8080/users HTTP/1.1
 Content-Type: application/json
 
 {
     "name": "John",
     "age": 20
 }
+
+#Update an existing user
+PUT http://localhost:8080/users/1 HTTP/1.1
+Content-Type: application/json
+{
+    "name":"Johns",
+    "age": 23
+}
+
+#Delete a user by ID
+DELETE http://localhost:8080/users/1
+
