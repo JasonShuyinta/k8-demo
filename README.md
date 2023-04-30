@@ -93,16 +93,31 @@ kubectl get deployment
 kubectl get pod
 ```
 
-To view logs for a specific pod, given that the pod name is app-123
+To get more information about a pod you can run
+```shell
+kubectl describe pod [POD_NAME]
+
+```
+
+
+To view logs for a specific pod
 
 ```shell
-kubectl logs app-123
+kubectl logs [POD_NAME]
 ```
 
 To run a specific pod in your terminal, for example a mysql terminal, get the pod name (mysql-123) and run:
 
 ```shell
-kubectl exec -it mysql-123 bin/bash
+kubectl exec -it [POD_NAME] bin/bash
+```
+
+You can use namespaces to group resources together
+```shell
+kubectl get namespaces
+kubectl get ns
+kubectl delete namespace [NAMESPACE]
+
 ```
 
 After you successfull enter into integrated mode in the mysql pod, to access your database run:
@@ -113,7 +128,7 @@ mysql -h <db_host> -u <user> -p <password>
 To view the running app on your browser, giving that the app is running on service service-123, run the command:
 
 ```shell
-minikube service service-123 --url
+minikube service [SERVICE_NAME] --url
 ```
 
 To enable the minikube dashboard run:
